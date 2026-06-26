@@ -1,1 +1,1 @@
-![Hugo](https://github.com/salpagarov/flow/actions/workflows/hugo.yml/badge.svg)
+![Hugo](https://github.com/salpagarov/mari/actions/workflows/hugo.yml/badge.svg)
