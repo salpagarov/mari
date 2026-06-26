@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  {{ $context := dict "page" . "level" 1 "isdateshown" false }}
+
+  {{ .Content }}
+
+  <ul class="Tags">
+    {{ range .Pages.ByTitle }}
+    {{ if gt (len .Pages) 1 }}
+      <li class="Tags-item u-background">
+        <a class="Tags-link u-clickable" href="{{ .RelPermalink }}">{{ .Title }}({{len .Pages}})</a>
+      </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+
+{{ end }}
